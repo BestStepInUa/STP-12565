@@ -1,33 +1,74 @@
-<header class="header">
+<header class="header-section">
   <div class="container">
-    <div class="wrapper">
-      <nav class="nav">
-        <a class="nav-logo" href="./index.html" aria-label="Site logo">
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="{=$icon-path}"></use>
-          </svg>
-        </a>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__burger-wrapper">
-        <button type="button" class="burger-btn" data-action="open">Open menu</button>
-        <div class="burger-menu" data-visible="close">
-          <ul>
-            <li><a href="#">link-1</a></li>
-            <li><a href="#">link-2</a></li>
-            <li><a href="#">link-3</a></li>
-            <li><a href="#">link-4</a></li>
-          </ul>
-          <button type="button" class="btn-close" data-action="close">close</button>
-        </div>
-      </div>
-    </div>
+    <nav class="nav">
+      <a
+        href="./index.html"
+        class="nav-logo logo-link"
+        aria-label="Логотип сайту"
+      >
+        <picture>
+          <source
+            media="(max-width: 375px)"
+            srcset="
+              ./img/header/Frame-mobile-2.png    1x,
+              ./img/header/Frame-mobile-2@2x.png 2x
+            "
+            width="22"
+            height="21"
+          />
+          <img
+            srcset="./img/header/Frame-2.png 1x, ./img/header/Frame-2@2x.png 2x"
+            src="./img/header/Frame-2.png"
+            alt="Girl helps dog"
+            width="69"
+            height="70"
+          />
+        </picture>
+      </a>
+
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a class="menu-link" href="#pets-list" aria-label="about the game"
+            >About the Game</a
+          >
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#faq" aria-label="How to Play"
+            >How to Play</a
+          >
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#stories" aria-label="Features"
+            >Features</a
+          >
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#stories" aria-label="Why Download"
+            >Why Download</a
+          >
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#stories" aria-label="Gallery">Gallery</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#stories" aria-label="Player Reviews"
+            >Player Reviews</a
+          >
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#stories" aria-label="FAQ">FAQ</a>
+        </li>
+      </ul>
+
+      <button
+        class="burger-button menu-btn-open"
+        type="button"
+        aria-label="open menu"
+      >
+        <svg class="burger-icon hero-burger-icon">
+          <use href="/img/SVG/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </nav>
   </div>
 </header>
