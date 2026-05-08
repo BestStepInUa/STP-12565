@@ -14,26 +14,20 @@
   --body-mobile: #f9f9f9;
 
   /* Background from-to values (for background gradients) */
-  --radial-gradient-from-to:
-    #7858ee 0%, #453288 100% /* Базові налаштування */ color: #fff;
-
-  font-synthesis: none;
+  --radial-gradient-from-to: #7858ee 0%, #453288 100% font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
 
-/* Глобальний шрифт */
 body {
   font-family:
     var(--nunito-font-family),
     system-ui,
     -apple-system,
     sans-serif;
-}
-
-body {
+  color: #fff;
   display: flex;
   flex-direction: column;
   min-width: 100vw;
