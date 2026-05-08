@@ -1,0 +1,28 @@
+h1 {
+  font-family: var(--fredoka-font-family);
+  font-weight: 700;
+  font-size: 28px;
+}
+
+h4 {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.35;
+  color: var(--body-privacy);
+}
+
+strong {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+ul {
+  list-style-type: circle;
+}
