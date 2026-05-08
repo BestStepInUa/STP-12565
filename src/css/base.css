@@ -14,7 +14,9 @@
   --body-mobile: #f9f9f9;
 
   /* Background from-to values (for background gradients) */
-  --radial-gradient-from-to: #7858ee 0%, #453288 100% font-synthesis: none;
+  --radial-gradient-from-to: #7858ee 0%, #453288 100%;
+
+  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
