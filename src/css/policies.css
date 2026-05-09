@@ -6,7 +6,8 @@
 }
 
 .policies-wrapper {
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 70px;
 }
 .policies-title {
   font-family: var(--fredoka-font-family);
@@ -32,15 +33,11 @@
   margin-bottom: 16px;
 }
 
-.policies-definitions {
-  margin-bottom: 26px;
-}
-
 .policies-definitions-title {
   font-weight: 800;
   font-size: 20px;
   line-height: 1.6;
-  margin-bottom: 26px;
+  margin-bottom: 16px;
 }
 
 .policies-item {
