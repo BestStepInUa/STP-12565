@@ -1,102 +1,109 @@
-.policies-body {
+.policies-terms-body {
   background: radial-gradient(
     34.59% 62.78% at 50% 40.11%,
     var(--radial-gradient-from-to)
   );
 }
 
-.policies-wrapper {
+.policies-terms-wrapper {
   padding-top: 30px;
   padding-bottom: 70px;
   overflow-wrap: anywhere;
   word-break: break-word;
 }
-.policies-title {
+
+.policies-terms-title {
   font-family: var(--fredoka-font-family);
   font-weight: 700;
   font-size: 28px;
   margin-bottom: 16px;
 }
 
-.policies-desc {
+.policies-terms-desc {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.35;
   color: var(--body-privacy);
 }
 
-.policies-desc-end {
+.policies-terms-desc-end {
   margin-bottom: 16px;
 }
 
-.policies-subtitle {
+.policies-terms-subtitle {
   font-weight: 900;
   font-size: 20px;
   margin-bottom: 16px;
 }
 
-.policies-definitions-title {
+.policies-terms-definitions-title {
   font-weight: 800;
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 16px;
 }
 
-.policies-item {
+.policies-terms-item {
   font-weight: 800;
   font-size: 18px;
   color: #fff;
 }
 
-.policies-ul {
+.policies-terms-ul {
   list-style-type: disc;
   padding-left: 28px;
 }
 
+.policies-terms-domain {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #76caff;
+}
+
 @media (max-width: 340px) {
-  .policies-title {
+  .policies-terms-title {
     font-size: 24px;
   }
 
-  .policies-subtitle {
+  .policies-terms-subtitle {
     font-size: 18px;
   }
 
-  .policies-desc {
+  .policies-terms-desc {
     font-size: 16px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .policies-title {
+  .policies-terms-title {
     font-size: 80px;
     margin-bottom: 24px;
   }
 
-  .policies-desc {
+  .policies-terms-desc {
     font-size: 32px;
     line-height: 1.6;
   }
 
-  .policies-desc-end {
+  .policies-terms-desc-end {
     margin-bottom: 24px;
   }
 
-  .policies-subtitle {
+  .policies-terms-subtitle {
     font-size: 32px;
     margin-bottom: 24px;
   }
 
-  .policies-definitions-title {
+  .policies-terms-definitions-title {
     font-size: 32px;
     margin-bottom: 24px;
   }
 
-  .policies-item {
+  .policies-terms-item {
     font-size: 32px;
   }
 
-  .policies-ul {
+  .policies-terms-ul {
     padding-left: 46px;
   }
 }
