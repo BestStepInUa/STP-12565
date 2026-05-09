@@ -1,0 +1,52 @@
+.policies-body {
+  background: radial-gradient(
+    34.59% 62.78% at 50% 40.11%,
+    var(--radial-gradient-from-to)
+  );
+}
+
+.policies-wrapper {
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+.policies-title {
+  font-family: var(--fredoka-font-family);
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.policies-desc {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.35;
+  color: var(--body-privacy);
+}
+
+.policies-desc-end {
+  margin-bottom: 16px;
+}
+
+.policies-subtitle {
+  font-weight: 900;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.policies-definitions-title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.policies-item {
+  font-weight: 800;
+  font-size: 18px;
+  color: #fff;
+}
+
+.policies-ul {
+  list-style-type: disc;
+  padding-left: 28px;
+}
