@@ -1,0 +1,141 @@
+.hero-section {
+  margin-top: 33px;
+  background-image: url('../img/hero/background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 208px;
+  padding: 12px 0;
+}
+
+/* Retina */
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url('../img/hero/background@2x.png');
+  }
+}
+.hero-googleplay-background {
+  width: 120px;
+  height: 33px;
+  background-color: black;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+}
+.hero-playmarket-text {
+  font-family: var(--google-sans-flex-font-family);
+  font-weight: 400;
+  font-size: 12px;
+}
+.hero-google-text {
+  font-family: var(--google-sans-flex-font-family);
+  font-weight: 600;
+  font-size: 14px;
+}
+.hero-play-logo {
+  width: 16px;
+  height: 18px;
+}
+.hero-title {
+  font-size: 26px;
+  font-family: var(--fredoka-font-family);
+  font-weight: 700;
+  width: 254px;
+  color: #fff;
+  text-align: left;
+
+  text-shadow:
+    /* Диагонали (1.5px для плотности) */
+    1.5px 1.5px 0 var(--stroke-dark),
+    -1.5px 1.5px 0 var(--stroke-dark),
+    1.5px -1.5px 0 var(--stroke-dark),
+    -1.5px -1.5px 0 var(--stroke-dark),
+    /* Оси (строго 2px) */ 2px 0px 0 var(--stroke-dark),
+    -2px 0px 0 var(--stroke-dark),
+    0px 2px 0 var(--stroke-dark),
+    0px -2px 0 var(--stroke-dark);
+  margin-bottom: 10px;
+}
+.hero-text {
+  font-family: var(--nunito-font-family);
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+
+  filter: drop-shadow(1px 0 0 var(--stroke-dark))
+    drop-shadow(-1px 0 0 var(--stroke-dark))
+    drop-shadow(0 1px 0 var(--stroke-dark))
+    drop-shadow(0 -1px 0 var(--stroke-dark));
+  margin-bottom: 22px;
+  text-align: left;
+}
+@media screen and (min-width: 376px) {
+  .hero-section {
+    margin-top: 98px;
+    padding-left: 6px;
+    padding-top: 101px;
+    height: 610px;
+  }
+
+  .hero-googleplay-background {
+    width: 272px;
+    height: 84px;
+    border-radius: 8px;
+
+    gap: 12px;
+  }
+  .hero-playmarket-text {
+    font-weight: 500;
+    font-size: 24px;
+  }
+  .hero-google-text {
+    font-weight: 600;
+    font-size: 32px;
+  }
+  .hero-play-logo {
+    width: 32px;
+    height: 35px;
+  }
+  .hero-title {
+    font-size: 80px;
+    font-family: var(--fredoka-font-family);
+    font-weight: 700;
+
+    color: #fff;
+    text-align: left;
+    width: 872px;
+    text-shadow: 
+    /* Основные направления 4px */
+      4px 0 0 var(--stroke-dark),
+      -4px 0 0 var(--stroke-dark),
+      0 4px 0 var(--stroke-dark),
+      0 -4px 0 var(--stroke-dark),
+      /* Диагонали 3px (для заполнения пустот) */ 3px 3px 0 var(--stroke-dark),
+      -3px 3px 0 var(--stroke-dark),
+      3px -3px 0 var(--stroke-dark),
+      -3px -3px 0 var(--stroke-dark),
+      /* Дополнительные точки для идеального круга */ 4px 2px 0
+        var(--stroke-dark),
+      4px -2px 0 var(--stroke-dark),
+      -4px 2px 0 var(--stroke-dark),
+      -4px -2px 0 var(--stroke-dark),
+      2px 4px 0 var(--stroke-dark),
+      -2px 4px 0 var(--stroke-dark),
+      2px -4px 0 var(--stroke-dark),
+      -2px -4px 0 var(--stroke-dark);
+
+    margin-bottom: 32px;
+  }
+  .hero-text {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 54px;
+    -webkit-text-stroke: 2px var(--stroke-dark);
+    paint-order: stroke fill;
+    -webkit-font-smoothing: antialiased;
+  }
+}

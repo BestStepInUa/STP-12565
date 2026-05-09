@@ -1,0 +1,65 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #374fc3 0%, #1a32a9 100%);
+  transform: translateX(100%);
+  transition: transform var(--transition-duration-300);
+  padding: 17px 0;
+}
+
+@media screen and (min-width: 376px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+.menu-link {
+  font-size: 16px;
+  font-family: var(--quicksand-font-family);
+  font-weight: 600;
+  color: #ffffff; /* Цвет заливки текста */
+
+  /* Цвет #FFB800 при 50% прозрачности — это rgba(255, 184, 0, 0.5) */
+  text-shadow:
+    0.5px 0.5px 0 rgba(255, 184, 0, 0.5),
+    -0.5px 0.5px 0 rgba(255, 184, 0, 0.5),
+    0.5px -0.5px 0 rgba(255, 184, 0, 0.5),
+    -0.5px -0.5px 0 rgba(255, 184, 0, 0.5);
+}
+.close-btn {
+  position: absolute;
+  background-color: transparent;
+  display: flex;
+  right: auto;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  top: 17px;
+  right: 10px;
+  padding: 0;
+}
+
+.close-icon {
+  color: var(--color-mariner-darkest);
+  color: #ffffff;
+  stroke: currentColor;
+}
+.mob-nav {
+  margin-top: 11px;
+}
+.mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+body.no-scroll {
+  overflow: hidden;
+}
