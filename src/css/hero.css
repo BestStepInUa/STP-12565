@@ -50,12 +50,11 @@
   text-align: left;
 
   text-shadow:
-    /* Диагонали (1.5px для плотности) */
     1.5px 1.5px 0 var(--stroke-dark),
     -1.5px 1.5px 0 var(--stroke-dark),
     1.5px -1.5px 0 var(--stroke-dark),
     -1.5px -1.5px 0 var(--stroke-dark),
-    /* Оси (строго 2px) */ 2px 0px 0 var(--stroke-dark),
+    2px 0px 0 var(--stroke-dark),
     -2px 0px 0 var(--stroke-dark),
     0px 2px 0 var(--stroke-dark),
     0px -2px 0 var(--stroke-dark);
@@ -110,18 +109,15 @@
     color: #fff;
     text-align: left;
     width: 872px;
-    text-shadow: 
-    /* Основные направления 4px */
+    text-shadow:
       4px 0 0 var(--stroke-dark),
       -4px 0 0 var(--stroke-dark),
       0 4px 0 var(--stroke-dark),
       0 -4px 0 var(--stroke-dark),
-      /* Диагонали 3px (для заполнения пустот) */ 3px 3px 0 var(--stroke-dark),
       -3px 3px 0 var(--stroke-dark),
       3px -3px 0 var(--stroke-dark),
       -3px -3px 0 var(--stroke-dark),
-      /* Дополнительные точки для идеального круга */ 4px 2px 0
-        var(--stroke-dark),
+      var(--stroke-dark),
       4px -2px 0 var(--stroke-dark),
       -4px 2px 0 var(--stroke-dark),
       -4px -2px 0 var(--stroke-dark),
