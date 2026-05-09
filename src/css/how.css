@@ -9,6 +9,11 @@
 
   height: 826px;
 }
+.wrap {
+  height: 826px;
+  position: relative;
+}
+
 .how-title {
   font-size: 24px;
   font-family: var(--fredoka-font-family);
