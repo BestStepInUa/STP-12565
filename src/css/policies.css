@@ -66,3 +66,37 @@
     font-size: 16px;
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  .policies-title {
+    font-size: 80px;
+    margin-bottom: 24px;
+  }
+
+  .policies-desc {
+    font-size: 32px;
+    line-height: 1.6;
+  }
+
+  .policies-desc-end {
+    margin-bottom: 24px;
+  }
+
+  .policies-subtitle {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .policies-definitions-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .policies-item {
+    font-size: 32px;
+  }
+
+  .policies-ul {
+    padding-left: 46px;
+  }
+}
