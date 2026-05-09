@@ -19,11 +19,19 @@
   margin-bottom: 16px;
 }
 
+.terms-title {
+  font-size: 32px;
+}
+
 .policies-terms-desc {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.35;
   color: var(--body-privacy);
+}
+
+.terms-desc {
+  font-weight: 400;
 }
 
 .policies-terms-desc-end {
@@ -32,6 +40,13 @@
 
 .policies-terms-subtitle {
   font-weight: 900;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.terms-subtitle {
+  font-family: var(--fredoka-font-family);
+  font-weight: 700;
   font-size: 20px;
   margin-bottom: 16px;
 }
@@ -91,6 +106,11 @@
 
   .policies-terms-subtitle {
     font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .terms-subtitle {
+    font-size: 60px;
     margin-bottom: 24px;
   }
 
