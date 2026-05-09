@@ -8,6 +8,8 @@
 .policies-wrapper {
   padding-top: 30px;
   padding-bottom: 70px;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 .policies-title {
   font-family: var(--fredoka-font-family);
@@ -48,5 +50,19 @@
 
 .policies-ul {
   list-style-type: disc;
-  padding-left: 28px;
+  padding-left: 18px;
+}
+
+@media (max-width: 340px) {
+  .policies-title {
+    font-size: 24px;
+  }
+
+  .policies-subtitle {
+    font-size: 18px;
+  }
+
+  .policies-desc {
+    font-size: 16px;
+  }
 }
