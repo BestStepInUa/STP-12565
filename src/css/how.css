@@ -9,11 +9,12 @@
 
   height: 826px;
 }
-.wrap {
-  height: 826px;
+.how-wrap {
   position: relative;
+  height: 826px;
 }
-
+.feature-wrap {
+}
 .how-title {
   font-size: 24px;
   font-family: var(--fredoka-font-family);
@@ -228,5 +229,8 @@
     position: absolute;
     bottom: 210px;
     left: 440px;
+  }
+  .how-wrap {
+    height: 1003px;
   }
 }
