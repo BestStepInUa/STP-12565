@@ -1,83 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/STP-12565/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Fredoka:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/STP-12565/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-12565/assets/styles-Dupsv6JK.css">
+    <link rel="stylesheet" crossorigin href="/STP-12565/assets/index-DGei0Lyw.css">
+    <link rel="stylesheet" crossorigin href="/STP-12565/assets/styles-Dq8pmirT.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header-section">
   <div class="container">
-    <div class="wrapper">
-      <nav class="nav">
-        <a class="nav-logo" href="./index.html" aria-label="Site logo">
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="/STP-12565/assets/sprite-E8vg0sBb.svg#logo"></use>
-          </svg>
-        </a>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__burger-wrapper">
-        <button type="button" class="burger-btn" data-action="open">Open menu</button>
-        <div class="burger-menu" data-visible="close">
-          <ul>
-            <li><a href="#">link-1</a></li>
-            <li><a href="#">link-2</a></li>
-            <li><a href="#">link-3</a></li>
-            <li><a href="#">link-4</a></li>
-          </ul>
-          <button type="button" class="btn-close" data-action="close">close</button>
-        </div>
-      </div>
-    </div>
+    <nav class="nav">
+      <a
+        href="./index.html"
+        class="nav-logo logo-link"
+        aria-label="Логотип сайту"
+      >
+        <picture>
+          <source
+            media="(max-width: 375px)"
+            srcset="data:image/png;base64,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 1x, /STP-12565/assets/Frame-mobile-2@2x-D6GHAopj.png 2x"
+            width="22"
+            height="21"
+          />
+          <img
+            srcset="/STP-12565/assets/Frame-2-nHccYerr.png 1x, /STP-12565/assets/Frame-2@2x-1-PBZXvC.png 2x"
+            src="/STP-12565/assets/Frame-2-nHccYerr.png"
+            alt="Girl helps dog"
+            width="69"
+            height="70"
+          />
+        </picture>
+      </a>
+
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a class="menu-link" href="#pets-list" aria-label="about the game"
+            >About the Game</a
+          >
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#faq" aria-label="How to Play"
+            >How to Play</a
+          >
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#stories" aria-label="Features"
+            >Features</a
+          >
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#stories" aria-label="Why Download"
+            >Why Download</a
+          >
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#stories" aria-label="Gallery">Gallery</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#stories" aria-label="Player Reviews"
+            >Player Reviews</a
+          >
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#stories" aria-label="FAQ">FAQ</a>
+        </li>
+      </ul>
+
+      <button
+        class="burger-button menu-btn-open"
+        type="button"
+        aria-label="open menu"
+      >
+        <svg class="burger-icon hero-burger-icon">
+          <use href="/STP-12565/assets/sprite-BzcRTxie.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </nav>
   </div>
 </header>
 
+
     <main>
       <!-- Loads the specified .html file -->
-      <section class="vite-promo">
+      <section class="hero-section">
   <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
+    <h1 class="hero-title">Match, Clear, and Keep the Flow Going</h1>
+    <p class="hero-text">
+      You'll be surprised how good it feels<br />
+      when those combos start chaining together.
+    </p>
+    <a href="#stories" class="btn-hero" aria-label="Google Play"
+      ><div class="hero-googleplay-background">
         <img
-          class="pic"
-          src="/STP-12565/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAjCAYAAAD17ghaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAw1JREFUeAG1lj9ME1Ecx3+/e9caCyomgKKJaQcGnYh/EhcjQkgckUl0aRcTJ9PExUG9DkQXE4hxcmgdpLpoBxP/pEjRmBhQIC46aNo4gFGGEhCQ+/N87+zhtWl77x3tZ2hz13f3/dzv997rITB60ufDKupJitCDFNrYqZxBzdj8cKYATQZ5OFH0uVJwGRRoyqRWopkiCn/yauG2HWBURZI//njoJjQJPDX6hm503geqrNUdyKpRoBQSs8NPUtBIgb6RVWru+A5rB255Sjgiimmdm7mYmYcGoPAP8ucQhBauAVohzwtYW8KUkLljj4aSPenBMGwTuwLOgUwl/t+BaoZlPfA7URX3gUwltqCoEVQmj6aHouCDsgo42JXYPwZUXQIZ+PwAy4p/vJDJiF5TVYBjBZbgN2+HpERJRHj/UGr+oLdDC2+H0Q6y7EYjOr73bX4zS5LrzyEMfgT8SuxCHe7teQfd6rK9kZEAmdx8RaI1M7xuKCPhDnfgyxYVTLJq5KuJeAqISnSxpVsZ7sYR0bPqU3dbhAS8JLzCKxhUA2pen1Dt/5eaq6AWlavDCe8iEptXCZNiXLgCDu5KbCfcvhdaV6QFHInwtxjcxRnf4Rw+L3wJdGz8AG16BFrTB8FaDoJfKGJBWoCH35iN2988fOVhN5g/d4JPElIC7nAH3xLs5SbYr6eEBaqFb91rgwhLsLeqKRZ+JjBgaPxYSKBeuKgE7zcPDg4YvSw855z3FAivfPUMryuBUKRsvbNyR9zBQgJ2+JxYeKWEsdDCnzihKq2R4IA+Wmu86hUeMlZBFrpOporjh6NdL94XAIp1x6oNDWcTDBWqdUx8yIleojYmnE8wmuh8PZMCScoEjhTn4eqn68LhyOprIY6tGaHRSC5XBB9sCZxefAmXP98GCVKrZkvcb3CZgFS40+eseJ/rCvQtPCte+nKnzXsoFhCtmMwEEwF/9Z+YZG8kvTUHlPq8LzutQRNQjACJ2bO4Cmz7TLA+R5oVzkH+sXj2ZFjRTY1F9tpnLcxZO4j2byNpLn8B9yei9b6CgTAAAAAASUVORK5CYII="
+          width="32"
+          height="35"
+          alt="play market"
+          class="hero-play-logo"
         />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
+
+        <div class="hero-wrapper">
+          <p class="hero-playmarket-text">Get in on</p>
+          <p class="hero-google-text">Google Play</p>
+        </div>
+      </div></a
+    >
   </div>
 </section>
 
@@ -120,21 +157,54 @@
 
     </main>
 
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
+    <footer class="footer"></footer>
+
+
+    <div class="mobile-menu">
+  <button
+    class="close-btn menu-btn-close"
+    type="button"
+    aria-label="Закрити меню"
+  >
+    <svg class="close-icon" width="24" height="24">
+      <use href="/STP-12565/assets/sprite-BzcRTxie.svg#icon-back-mobile"></use>
+    </svg>
+  </button>
+
+  <nav class="mob-nav">
+    <ul class="mob-menu-list">
+      <li class="menu-item">
+        <a class="menu-link" href="#pets-list" aria-label="about the game"
+          >About the Game</a
+        >
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="#faq" aria-label="How to Play"
+          >How to Play</a
+        >
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="#stories" aria-label="Features">Features</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="#stories" aria-label="Why Download"
+          >Why Download</a
+        >
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="#stories" aria-label="Gallery">Gallery</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="#stories" aria-label="Player Reviews"
+          >Player Reviews</a
+        >
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="#stories" aria-label="FAQ">FAQ</a>
+      </li>
+    </ul>
+  </nav>
+</div>
 
 
   </body>
