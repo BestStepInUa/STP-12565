@@ -22,7 +22,8 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-Сорян body {
+
+body {
   font-family:
     var(--nunito-font-family),
     system-ui,
