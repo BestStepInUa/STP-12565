@@ -46,7 +46,7 @@
   color: #ffffff;
   stroke: currentColor;
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 1440px) {
   .header-section {
     padding: 14px 0;
     background: linear-gradient(156deg, #374fc3 0%, #1a32a9 100%);

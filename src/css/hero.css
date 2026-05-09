@@ -6,6 +6,7 @@
   background-size: cover;
   height: 208px;
   padding: 12px 0;
+  margin-top: 33px;
 }
 
 /* Retina */
@@ -73,7 +74,8 @@
   margin-bottom: 22px;
   text-align: left;
 }
-@media screen and (min-width: 376px) {
+
+@media screen and (min-width: 1440px) {
   .hero-section {
     margin-top: 98px;
     padding-left: 6px;
