@@ -23,6 +23,9 @@
   -webkit-text-size-adjust: 100%;
 }
 
+html {
+  overflow-x: hidden;
+}
 body {
   font-family:
     var(--nunito-font-family),
@@ -30,11 +33,12 @@ body {
     -apple-system,
     sans-serif;
   color: #fff;
-  display: flex;
-  flex-direction: column;
+  display: block;
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  overflow-x: hidden;
+  min-width: 0;
 }
 
 main {
