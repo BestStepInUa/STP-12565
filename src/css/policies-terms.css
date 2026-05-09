@@ -17,6 +17,11 @@
   font-weight: 700;
   font-size: 28px;
   margin-bottom: 16px;
+  text-shadow:
+    -1px -1px 0 var(--stroke-dark),
+    1px -1px 0 var(--stroke-dark),
+    -1px 1px 0 var(--stroke-dark),
+    1px 1px 0 var(--stroke-dark);
 }
 
 .terms-title {
@@ -42,13 +47,22 @@
   font-weight: 900;
   font-size: 20px;
   margin-bottom: 16px;
+  text-shadow:
+    -1px -1px 0 var(--stroke-dark),
+    1px -1px 0 var(--stroke-dark),
+    -1px 1px 0 var(--stroke-dark),
+    1px 1px 0 var(--stroke-dark);
 }
-
 .terms-subtitle {
   font-family: var(--fredoka-font-family);
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 16px;
+  text-shadow:
+    -1px -1px 0 var(--stroke-dark),
+    1px -1px 0 var(--stroke-dark),
+    -1px 1px 0 var(--stroke-dark),
+    1px 1px 0 var(--stroke-dark);
 }
 
 .policies-terms-definitions-title {
