@@ -20,12 +20,20 @@
 .hero-googleplay-background {
   width: 120px;
   height: 33px;
-  background-color: black;
+  background-color: #000;
   border-radius: 2px;
+
   display: flex;
   align-items: center;
-  gap: 4px;
   justify-content: center;
+  gap: 4px;
+
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+
+.hero-googleplay-background:active {
+  background-color: #5e5d5d;
 }
 .hero-playmarket-text {
   font-family: var(--google-sans-flex-font-family);
