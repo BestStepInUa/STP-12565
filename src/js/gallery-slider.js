@@ -15,12 +15,14 @@ new Swiper('.gallery-swiper', {
   slidesPerView: 1,
 
   // smoothness like a “finger”
-  speed: 750,
+  speed: 1250,
   longSwipes: true,
   longSwipesRatio: 0.2,
   resistanceRatio: 0.85,
   simulateTouch: true,
   touchRatio: 1,
+
+  watchOverflow: true,
 
   coverflowEffect: {
     rotate: 50,

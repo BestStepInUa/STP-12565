@@ -17,6 +17,11 @@
   font-weight: 700;
   font-size: 24px;
   text-align: center;
+  text-shadow:
+    -2px -2px 0 var(--stroke-dark),
+    2px -2px 0 var(--stroke-dark),
+    -2px 2px 0 var(--stroke-dark),
+    2px 2px 0 var(--stroke-dark);
 }
 
 .gallery-desc {
@@ -24,6 +29,11 @@
   font-size: 16px;
   text-align: center;
   margin-bottom: 26px;
+  text-shadow:
+    -1px -1px 0 var(--stroke-dark),
+    1px -1px 0 var(--stroke-dark),
+    -1px 1px 0 var(--stroke-dark),
+    1px 1px 0 var(--stroke-dark);
 }
 
 /* =========================
@@ -34,26 +44,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 23px;
 }
 
 .gallery-swiper {
   width: 169px;
   height: 225px;
-
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 6px;
 }
 
 .gallery-swiper .swiper-slide {
-  width: 169px !important;
+  width: 169px;
   height: 225px;
-
-  border-radius: 20px;
+  border-radius: 6px;
+  border: 1px solid var(--stroke-dark);
   overflow: hidden;
 }
 
-.gallery-swiper img {
+.gallery-swiper picture {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -66,35 +75,38 @@
 
 .button-prev,
 .button-next {
-  width: 44px;
-  height: 44px;
-
+  width: 24px;
+  height: 24px;
   border: none;
   border-radius: 50%;
-  background: #fff;
-
+  border: 1px solid var(--stroke-dark);
+  background: linear-gradient(180deg, #9fd0ff 0%, #6ea8ff 50%, #4f7bff 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
-
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-
-  transition: transform 0.2s ease;
+  box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25);
+  transition: transform 300ms ease;
 }
 
 .button-prev:hover,
 .button-next:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .btn-arrow {
-  width: 20px;
-  height: 20px;
-  fill: #000;
+  width: 11px;
+  height: 11px;
 }
 
 .button-next .btn-arrow {
   transform: rotate(180deg);
+}
+
+.button-prev.swiper-button-disabled,
+.button-next.swiper-button-disabled {
+  opacity: 0.4;
+  transform: scale(1);
+  cursor: default;
+  pointer-events: none; /* block clicks */
 }
