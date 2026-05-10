@@ -80,10 +80,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 18px;
   height: 10px;
-
   flex-shrink: 0;
   cursor: pointer;
   color: #000;
@@ -160,9 +158,8 @@ details[open] .icon-arrow {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-
-    width: 15px;
-    height: 27px;
+    width: 27px;
+    height: 15px;
   }
 
   .faq-inner {
