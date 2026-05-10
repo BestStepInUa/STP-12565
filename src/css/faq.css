@@ -4,6 +4,7 @@
     34.59% 62.78% at 50% 40.11%,
     var(--radial-gradient-from-to)
   );
+  scroll-margin-top: 33px;
 }
 
 .faq-wrapper {
@@ -120,6 +121,7 @@ details[open] .icon-arrow {
 @media screen and (min-width: 1440px) {
   .faq-section {
     padding: 34px 0 92px;
+    scroll-margin-top: 98px;
   }
 
   .faq-wrapper {
