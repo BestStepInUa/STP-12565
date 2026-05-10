@@ -5,12 +5,12 @@
   box-sizing: border-box;
 }
 html {
-  font-family:
-    system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji';
+  font-family: var(--nunito-font-family);
+
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   tab-size: 4;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
