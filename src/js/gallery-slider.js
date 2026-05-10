@@ -1,15 +1,35 @@
 import Swiper from 'swiper';
-import { Navigation, Keyboard } from 'swiper/modules';
+import { EffectCoverflow, Navigation, Keyboard } from 'swiper/modules';
 
 import 'swiper/css';
+import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 
 new Swiper('.gallery-swiper', {
-  modules: [Navigation, Keyboard],
+  modules: [EffectCoverflow, Navigation, Keyboard],
+
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
 
   slidesPerView: 1,
-  centeredSlides: true,
-  spaceBetween: 0,
+
+  // smoothness like a “finger”
+  speed: 750,
+  longSwipes: true,
+  longSwipesRatio: 0.2,
+  resistanceRatio: 0.85,
+  simulateTouch: true,
+  touchRatio: 1,
+
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 120,
+    modifier: 1.5,
+    slideShadows: false,
+    scale: 0.95,
+  },
 
   navigation: {
     nextEl: '.button-next',

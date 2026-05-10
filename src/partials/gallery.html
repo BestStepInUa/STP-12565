@@ -4,6 +4,12 @@
     <p class="gallery-desc">Color and motion</p>
 
     <div class="gallery-slider-box">
+      <button class="button-prev" type="button" aria-label="Previous slide">
+        <svg class="btn-arrow">
+          <use href="/img/SVG/sprite.svg#icon-back-mobile"></use>
+        </svg>
+      </button>
+
       <div class="swiper gallery-swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -17,11 +23,7 @@
               />
               <img
                 src="./img/gallery/gallery_slide01.png"
-                alt="Girl helps dog"
-                srcset="
-                  ./img/gallery/gallery_slide01.png    1x,
-                  ./img/gallery/gallery_slide01@2x.png 2x
-                "
+                alt="Gallery image"
                 width="169"
                 height="225"
               />
@@ -40,10 +42,6 @@
               <img
                 src="./img/gallery/gallery_slide02.png"
                 alt="Gallery image"
-                srcset="
-                  ./img/gallery/gallery_slide02.png    1x,
-                  ./img/gallery/gallery_slide02@2x.png 2x
-                "
                 width="169"
                 height="225"
               />
@@ -62,10 +60,6 @@
               <img
                 src="./img/gallery/gallery_slide03.png"
                 alt="Gallery image"
-                srcset="
-                  ./img/gallery/gallery_slide03.png    1x,
-                  ./img/gallery/gallery_slide03@2x.png 2x
-                "
                 width="169"
                 height="225"
               />
@@ -84,10 +78,6 @@
               <img
                 src="./img/gallery/gallery_slide04.png"
                 alt="Gallery image"
-                srcset="
-                  ./img/gallery/gallery_slide04.png    1x,
-                  ./img/gallery/gallery_slide04@2x.png 2x
-                "
                 width="169"
                 height="225"
               />
@@ -106,10 +96,6 @@
               <img
                 src="./img/gallery/gallery_slide05.png"
                 alt="Gallery image"
-                srcset="
-                  ./img/gallery/gallery_slide05.png    1x,
-                  ./img/gallery/gallery_slide05@2x.png 2x
-                "
                 width="169"
                 height="225"
               />
@@ -118,27 +104,11 @@
         </div>
       </div>
 
-      <div class="arrow-buttons">
-        <button
-          class="button-prev"
-          type="button"
-          aria-label="Previous slide"
-        >
-          <svg class="btn-arrow">
-            <use href="/img/SVG/sprite.svg#icon-back-mobile"></use>
-          </svg>
-        </button>
-
-        <button
-          class="button-next"
-          type="button"
-          aria-label="Next slide"
-        >
-          <svg class="btn-arrow">
-            <use href="/img/SVG/sprite.svg#icon-back-mobile"></use>
-          </svg>
-        </button>
-      </div>
+      <button class="button-next" type="button" aria-label="Next slide">
+        <svg class="btn-arrow">
+          <use href="/img/SVG/sprite.svg#icon-back-mobile"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </section>
