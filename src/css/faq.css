@@ -120,6 +120,7 @@ details[open] .icon-arrow {
 @media screen and (min-width: 1440px) {
   .faq-section {
     padding: 34px 0 92px;
+    scroll-margin-top: 98px;
   }
 
   .faq-wrapper {

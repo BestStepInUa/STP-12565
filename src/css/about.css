@@ -71,6 +71,7 @@
 
 @media screen and (min-width: 1440px) {
   .about {
+    scroll-margin-top: 98px;
     background: radial-gradient(
       282.01% 60.96% at 50% 50%,
       #7858ee 0%,

@@ -129,6 +129,7 @@
     );
     padding-top: 34px;
     height: 1003px;
+    scroll-margin-top: 98px;
   }
   .how-title {
     font-size: 60px;
