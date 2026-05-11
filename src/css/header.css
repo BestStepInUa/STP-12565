@@ -40,6 +40,11 @@
   width: 22px;
   height: 17px;
 }
+.burger-button:hover {
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.8))
+    drop-shadow(0 0 12px rgba(255, 255, 255, 0.4));
+  transform: scale(1.05);
+}
 .hero-burger-icon {
   width: 100%;
   height: 100%;

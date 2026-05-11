@@ -28,11 +28,29 @@
   gap: 4px;
 
   cursor: pointer;
-  transition: background-color 150ms ease;
+  transition:
+    background-color 300ms ease,
+    box-shadow 300ms ease;
 }
 
+/* hover */
+.hero-googleplay-background:hover {
+  background-color: #1a1a1a;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+}
+
+/* active */
 .hero-googleplay-background:active {
   background-color: #5e5d5d;
+  transform: scale(0.98);
+}
+
+/* keyboard focus */
+.hero-googleplay-background:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 2px rgba(255, 255, 255, 0.6),
+    0 0 12px rgba(255, 255, 255, 0.35);
 }
 .hero-playmarket-text {
   font-family: var(--google-sans-flex-font-family);

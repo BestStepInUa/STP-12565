@@ -3,6 +3,7 @@
     34.59% 62.78% at 50% 40.11%,
     var(--radial-gradient-from-to)
   );
+  margin-top: 33px;
 }
 
 .policies-terms-wrapper {
@@ -104,6 +105,9 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .policies-terms-body {
+    margin-top: 98px;
+  }
   .policies-terms-title {
     font-size: 80px;
     margin-bottom: 24px;
