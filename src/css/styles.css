@@ -12,8 +12,7 @@
 
 /* Sections style */
 @import url('./header.css');
-@import url('./badges.css');
-@import url('./back-link.css');
+
 @import url('./footer.css');
 @import url('./mobile-menu.css');
 @import url('./hero.css');
@@ -23,3 +22,4 @@
 @import url('./why.css');
 @import url('./gallery.css');
 @import url('./faq.css');
+@import url('./header-terms.css');

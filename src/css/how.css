@@ -96,6 +96,9 @@
   bottom: 47px;
   left: 19px;
 }
+.how-pic {
+  z-index: 2;
+}
 .how-line1 {
   position: absolute;
   top: 131px;
