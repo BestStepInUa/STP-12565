@@ -44,19 +44,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 23px;
 }
 
 .gallery-swiper {
-  width: 169px;
-  height: 225px;
+  width: 100%;
   overflow: hidden;
   border-radius: 6px;
 }
 
 .gallery-swiper .swiper-slide {
-  width: 169px;
-  height: 225px;
+  width: 313px;
   border-radius: 6px;
   border: 1px solid var(--stroke-dark);
   overflow: hidden;

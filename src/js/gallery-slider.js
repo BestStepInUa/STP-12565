@@ -11,8 +11,8 @@ new Swiper('.gallery-swiper', {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
-
-  slidesPerView: 1,
+  slidesPerView: 'auto',
+  initialSlide: 2,
 
   // smoothness like a “finger”
   speed: 1250,
@@ -25,10 +25,10 @@ new Swiper('.gallery-swiper', {
   watchOverflow: true,
 
   coverflowEffect: {
-    rotate: 50,
+    rotate: 0,
     stretch: 0,
-    depth: 120,
-    modifier: 1.5,
+    depth: 350,
+    modifier: 1,
     slideShadows: false,
     scale: 0.95,
   },
