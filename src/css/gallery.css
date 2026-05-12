@@ -120,7 +120,6 @@
 @media only screen and (min-width: 1440px) {
   .gallery-slider-box {
     gap: 85px;
-    width: 90%;
   }
   .gallery-swiper .swiper-slide {
     width: 313px;
