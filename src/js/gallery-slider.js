@@ -15,7 +15,7 @@ new Swiper('.gallery-swiper', {
   initialSlide: 2,
 
   // smoothness like a “finger”
-  speed: 1250,
+  speed: 600,
   longSwipes: true,
   longSwipesRatio: 0.2,
   resistanceRatio: 0.85,
@@ -30,7 +30,6 @@ new Swiper('.gallery-swiper', {
     depth: 350,
     modifier: 1,
     slideShadows: false,
-    scale: 0.95,
   },
 
   navigation: {
