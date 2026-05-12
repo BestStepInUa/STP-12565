@@ -6,8 +6,9 @@
   </symbol>
 
   <!-- Back (desktop) -->
-  <symbol id="icon-back" viewBox="0 0 30 32">
-    <path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M29.333 0.667l-28.667 13.771 28.667 16.896"></path>
+  <symbol id="icon-back" viewBox="0 0 30 32" >
+   <path fill="none" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6809" d="M25.143 0.28l-24.511 16.877 24.511 14.442"></path>
+
   </symbol>
 
   <!-- Burger -->
