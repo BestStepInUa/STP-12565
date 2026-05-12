@@ -45,7 +45,8 @@
   align-items: center;
   justify-content: center;
   gap: 22px;
-  width: 90%;
+  width: 100%;
+  padding: 0 14px;
 }
 
 .gallery-swiper {
@@ -83,6 +84,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   cursor: pointer;
   box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25);
   transition: transform 300ms ease;
@@ -120,8 +122,20 @@
 @media only screen and (min-width: 1440px) {
   .gallery-slider-box {
     gap: 85px;
+    padding: 0 16px;
   }
   .gallery-swiper .swiper-slide {
     width: 313px;
+  }
+
+  .button-prev,
+  .button-next {
+    width: 66px;
+    height: 66px;
+  }
+
+  .btn-arrow {
+    width: 24px;
+    height: 24px;
   }
 }

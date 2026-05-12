@@ -8,6 +8,7 @@ import 'swiper/css/navigation';
 new Swiper('.gallery-swiper', {
   modules: [EffectCoverflow, Navigation, Keyboard],
 
+  // loop: true,
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
