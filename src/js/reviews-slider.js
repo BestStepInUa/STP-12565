@@ -31,7 +31,6 @@ new Swiper('.reviews-swiper', {
     depth: 120,
     modifier: 1.5,
     slideShadows: false,
-    scale: 0.95,
   },
 
   navigation: {
