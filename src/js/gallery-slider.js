@@ -8,11 +8,11 @@ import 'swiper/css/navigation';
 new Swiper('.gallery-swiper', {
   modules: [EffectCoverflow, Navigation, Keyboard],
 
-  // loop: true,
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
-  slidesPerView: 'auto',
+  slideToClickedSlide: true,
+  slidesPerView: 1,
   initialSlide: 2,
 
   // smoothness like a “finger”
@@ -31,6 +31,12 @@ new Swiper('.gallery-swiper', {
     depth: 350,
     modifier: 1,
     slideShadows: false,
+  },
+
+  breakpoints: {
+    1440: {
+      slidesPerView: 'auto',
+    },
   },
 
   navigation: {
