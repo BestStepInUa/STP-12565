@@ -36,7 +36,6 @@ new Swiper('.gallery-swiper', {
 
   breakpoints: {
     1440: {
-      // loop: false,
       slidesPerView: 'auto',
       coverflowEffect: {
         rotate: 0,
