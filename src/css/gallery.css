@@ -62,7 +62,7 @@
   overflow: hidden;
 }
 
-.gallery-swiper picture {
+.gallery-swiper img {
   width: 100%;
   height: 100%;
   object-fit: cover;

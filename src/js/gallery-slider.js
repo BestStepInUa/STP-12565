@@ -26,16 +26,22 @@ new Swiper('.gallery-swiper', {
   watchOverflow: true,
 
   coverflowEffect: {
-    rotate: 0,
+    rotate: 50,
     stretch: 0,
-    depth: 350,
-    modifier: 1,
+    depth: 120,
+    modifier: 1.5,
     slideShadows: false,
+    scale: 0.95,
   },
 
   breakpoints: {
     1440: {
       slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        depth: 350,
+        modifier: 1,
+      },
     },
   },
 
