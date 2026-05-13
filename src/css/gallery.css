@@ -52,7 +52,6 @@
 .gallery-swiper {
   width: 100%;
   overflow: hidden;
-  border-radius: 6px;
 }
 
 .gallery-swiper .swiper-slide {
@@ -73,8 +72,8 @@
    BUTTONS
 ========================= */
 
-.button-prev,
-.button-next {
+.gallery-slider-button-prev,
+.gallery-slider-button-next {
   width: 24px;
   height: 24px;
   border: none;
@@ -91,28 +90,28 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .button-prev:hover,
-  .button-next:hover {
+  .gallery-slider-button-prev:hover,
+  .gallery-slider-button-next:hover {
     transform: scale(1.1);
   }
 }
 
-.button-prev:active,
-.button-next:active {
+.gallery-slider-button-prev:active,
+.gallery-slider-button-next:active {
   transform: scale(1.1);
 }
 
-.btn-arrow {
+.gallery-slider-btn-arrow {
   width: 11px;
   height: 11px;
 }
 
-.button-next .btn-arrow {
+.gallery-slider-button-next .gallery-slider-btn-arrow {
   transform: rotate(180deg);
 }
 
-.button-prev.swiper-button-disabled,
-.button-next.swiper-button-disabled {
+.gallery-slider-button-prev.swiper-button-disabled,
+.gallery-slider-button-next.swiper-button-disabled {
   opacity: 0.4;
   transform: scale(1);
   cursor: default;
@@ -120,21 +119,46 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .gallery-section {
+    padding: 34px 0 178px;
+    background: radial-gradient(
+      49.84% 40.23% at 50% 53.53%,
+      var(--radial-gradient-from-to)
+    );
+  }
+
+  .gallery-title {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+
+  .gallery-desc {
+    font-size: 32px;
+    margin-bottom: 58px;
+    text-shadow:
+      -2px -2px 0 var(--stroke-dark),
+      2px -2px 0 var(--stroke-dark),
+      -2px 2px 0 var(--stroke-dark),
+      2px 2px 0 var(--stroke-dark);
+  }
   .gallery-slider-box {
     gap: 85px;
     padding: 0 16px;
   }
   .gallery-swiper .swiper-slide {
     width: 313px;
+    border-radius: 16px;
+    border: 3px solid var(--stroke-dark);
+    box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.25);
   }
 
-  .button-prev,
-  .button-next {
+  .gallery-slider-button-prev,
+  .gallery-slider-button-next {
     width: 66px;
     height: 66px;
   }
 
-  .btn-arrow {
+  .gallery-slider-btn-arrow {
     width: 24px;
     height: 24px;
   }

@@ -11,7 +11,6 @@ new Swiper('.gallery-swiper', {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
-  slideToClickedSlide: true,
   slidesPerView: 1,
   initialSlide: 2,
 
@@ -46,8 +45,8 @@ new Swiper('.gallery-swiper', {
   },
 
   navigation: {
-    nextEl: '.button-next',
-    prevEl: '.button-prev',
+    nextEl: '.gallery-slider-button-next',
+    prevEl: '.gallery-slider-button-prev',
   },
 
   keyboard: {
