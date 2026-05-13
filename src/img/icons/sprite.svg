@@ -1,47 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <defs>
+    <radialGradient id="paint0_radial_126_235" cx="0" cy="0" r="1" gradientTransform="matrix(1.19547 -8.72297 5.20147 1.2661 7.40813 5.61586)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7858EE"/>
+      <stop offset="1" stop-color="#453288"/>
+    </radialGradient>
+  </defs>
 
-  <!-- back-mobile -->
   <symbol id="icon-back-mobile" viewBox="0 0 24 32">
     <path fill="none" stroke="currentColor" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6842" d="M21.615 0.655l-20.211 16.336 20.211 13.979"></path>
   </symbol>
 
-  <!-- Back (desktop) -->
-  <symbol id="icon-back" viewBox="0 0 30 32" >
-   <path fill="none" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6809" d="M25.143 0.28l-24.511 16.877 24.511 14.442"></path>
-
+  <symbol id="icon-back" viewBox="0 0 30 32">
+    <path fill="none" stroke="currentColor" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.2" d="M25.143 0.28l-24.511 16.877 24.511 14.442"></path>
   </symbol>
 
-  <!-- Burger -->
   <symbol id="icon-burger" viewBox="0 0 41 32">
     <path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 8h33M4 16h33M4 24h33"></path>
   </symbol>
-
-  <!-- STAR 1 (black fill version) -->
-  <symbol id="star-full" viewBox="0 0 37 32">
-    <path opacity="0.76" fill="#000" d="M18.162 0l4.287 12.126h13.875l-11.225 7.494 4.287 12.126-11.225-7.494-11.225 7.494 4.287-12.126-11.225-7.494h13.875l4.287-12.126z"></path>
-  </symbol>
-
-  <!-- STAR 2 (white + stroke version) -->
-  <symbol id="icon-star" viewBox="0 0 37 32">
-    <path fill="#fff" opacity="0.76" stroke="#493479" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.0645"
-      d="M21.477 12.47l0.243 0.689h11.199l-9.059 6.048 0.267 0.757 3.253 9.2-9.217-6.153-9.218 6.153 3.521-9.957-9.059-6.048h11.199l0.243-0.689 3.314-9.375 3.314 9.375z">
-    </path>
-  </symbol>
-  <symbol id="icon-full-mobile" viewBox="0 0 37 32">
-    <path opacity="0.76" fill="#000"
-      d="M18.235 0l4.305 11.906h13.931l-11.27 7.358 4.305 11.906-11.27-7.358-11.27 7.358 4.305-11.906-11.27-7.358h13.931l4.305-11.906z">
-    </path>
-  </symbol>
-
-  <!-- STAR MOBILE (white + stroke) -->
-  <symbol id="icon-star-mobile" viewBox="0 0 37 32">
-    <path fill="#fff" opacity="0.76"
-      stroke="#493479"
-      stroke-linejoin="miter"
-      stroke-linecap="butt"
-      stroke-miterlimit="4"
-      stroke-width="2.4615"
-      d="M21.383 12.325l0.293 0.812h10.659l-8.623 5.63 0.332 0.916 3.050 8.442-8.861-5.784-0.671 0.44-8.192 5.346 3.387-9.361-0.815-0.534-7.808-5.096h10.659l0.293-0.812 3.147-8.707 3.149 8.707z">
-    </path>
+<symbol id="icon-star-full-mob-1" viewBox="0 0 37 32">
+<path fill="currentColor" d="M18.235 0l4.305 11.906h13.931l-11.27 7.358 4.305 11.906-11.27-7.358-11.27 7.358 4.305-11.906-11.27-7.358h13.931l4.305-11.906z"></path>
+</symbol>
+<!-- fill="currentColor" css -->
+  <symbol id="icon-star-outline" viewBox="0 0 15 13">
+    <path d="M8.68701 5.00684L8.80615 5.33691H13.1362L9.96436 7.40723L9.6333 7.62402L9.76807 7.99609L11.0073 11.4258L7.68115 9.25488L7.40771 9.07617L7.13525 9.25488L3.80713 11.4268L5.04834 7.99609L5.18311 7.62402L4.85205 7.40723L1.68018 5.33691H6.01025L6.12939 5.00684L7.40771 1.46973L8.68701 5.00684Z" fill="white" fill-opacity="0.76" stroke="#493479"/>
   </symbol>
 </svg>

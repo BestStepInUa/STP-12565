@@ -27,6 +27,11 @@ html {
   overflow-x: hidden;
 }
 body {
+  background: radial-gradient(
+    34.59% 62.78% at 50% 40.11%,
+    #7858ee 0%,
+    #453288 450%
+  );
   font-family:
     var(--nunito-font-family),
     system-ui,
