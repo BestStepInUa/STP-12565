@@ -97,7 +97,7 @@
 
 .review-raiting {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
   gap: 2.53px;
@@ -109,11 +109,8 @@
 }
 
 .review-star use {
-  fill: radial-gradient(
-    34.59% 62.78% at 50% 40.11%,
-    rgb(120, 88, 238) 0%,
-    rgb(69, 50, 136) 100%
-  );
+  width: 15px;
+  height: 15px;
 }
 
 .review-text {
