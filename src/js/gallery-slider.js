@@ -11,11 +11,11 @@ new Swiper('.gallery-swiper', {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
-
   slidesPerView: 1,
+  initialSlide: 2,
 
   // smoothness like a “finger”
-  speed: 1250,
+  speed: 600,
   longSwipes: true,
   longSwipesRatio: 0.2,
   resistanceRatio: 0.85,
@@ -33,9 +33,20 @@ new Swiper('.gallery-swiper', {
     scale: 0.95,
   },
 
+  breakpoints: {
+    1440: {
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        depth: 350,
+        modifier: 1,
+      },
+    },
+  },
+
   navigation: {
-    nextEl: '.button-next',
-    prevEl: '.button-prev',
+    nextEl: '.gallery-slider-button-next',
+    prevEl: '.gallery-slider-button-prev',
   },
 
   keyboard: {
