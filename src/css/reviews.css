@@ -43,7 +43,13 @@
   overflow: hidden;
 }
 
+.swiper-wrapper.review-swiper-wrapper {
+  align-items: stretch;
+}
+
 .reviews-swiper .swiper-slide {
+  height: auto;
+  display: flex;
   width: 100%;
   overflow: hidden;
   border-radius: 16px;
@@ -59,6 +65,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  flex: 1;
   padding: 12px;
   gap: 4px;
 }
@@ -165,6 +172,9 @@
 }
 
 @media (max-width: 340px) {
+  .reviews-slider-box {
+    gap: 8px;
+  }
   .review-img {
     width: 36px;
     height: 36px;
