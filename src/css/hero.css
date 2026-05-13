@@ -9,7 +9,7 @@
   background-position: center;
   background-size: cover;
   padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 31px;
 }
 /* Retina */
 @media (-webkit-min-device-pixel-ratio: 2),
@@ -111,6 +111,7 @@
   .hero-box {
     background-image: url('../img/hero/background.png');
     padding-top: 101px;
+    padding-bottom: 79px;
   }
   .hero-googleplay-background {
     width: 272px;
