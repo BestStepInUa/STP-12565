@@ -107,12 +107,6 @@
   width: 15px;
   height: 15px;
 }
-
-.review-star use {
-  width: 15px;
-  height: 15px;
-}
-
 .review-text {
   font-family: var(--quicksand-font-family);
   font-weight: 700;
@@ -168,4 +162,14 @@
   transform: scale(1);
   cursor: default;
   pointer-events: none; /* block clicks */
+}
+
+@media (max-width: 340px) {
+  .review-img {
+    width: 36px;
+    height: 36px;
+  }
+  .review-author-name {
+    font-size: 16px;
+  }
 }
