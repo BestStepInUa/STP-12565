@@ -4,6 +4,7 @@
     34.59% 62.78% at 50% 40.11%,
     var(--radial-gradient-from-to)
   );
+  scroll-margin-top: 33px;
 }
 
 .reviews-wrapper {
@@ -194,6 +195,7 @@
   .reviews-section {
     padding-top: 34px;
     padding-bottom: 106px;
+    scroll-margin-top: 98px;
   }
   .reviews-section .container {
     padding: 0;
