@@ -1,0 +1,75 @@
+<section class="reviews-section" id="reviews">
+  <div class="container reviews-wrapper">
+    <h2 class="reviews-title">Player Reviews</h2>
+
+    <div class="reviews-slider-box">
+      <button
+        class="reviews-slider-button-prev"
+        type="button"
+        aria-label="Previous slide"
+      >
+        <svg class="reviews-slider-btn-arrow">
+          <use href="/img/icons/sprite.svg#icon-back-mobile"></use>
+        </svg>
+      </button>
+
+      <div class="swiper reviews-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="review">
+              <div class="review-top">
+                <picture class="review-img">
+                  <source
+                    media="(max-width: 1439px)"
+                    srcset="
+                      ./img/reviews/m_tile_master.png    1x,
+                      ./img/reviews/m_tile_master@2x.png 2x
+                    "
+                  />
+                  <img
+                    src="./img/reviews/tile_master.png"
+                    alt="Gallery image 'Booster!'"
+                  />
+                </picture>
+                <div class="review-author-info">
+                  <span class="review-author-name">TileMaster</span>
+                  <div class="review-raiting">
+                    <svg class="review-star">
+                      <use href="/img/icons/sprite.svg#icon-full-mobile"></use>
+                    </svg>
+                    <svg class="review-star">
+                      <use href="/img/icons/sprite.svg#icon-full-mobile"></use>
+                    </svg>
+                    <svg class="review-star">
+                      <use href="/img/icons/sprite.svg#icon-full-mobile"></use>
+                    </svg>
+                    <svg class="review-star">
+                      <use href="/img/icons/sprite.svg#icon-full-mobile"></use>
+                    </svg>
+                    <svg class="review-star">
+                      <use href="/img/icons/sprite.svg#icon-full-mobile"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <p class="review-text">
+                “Love how smooth everything feels! Those big combo chains are so
+                satisfying to pull off.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="reviews-slider-button-next"
+        type="button"
+        aria-label="Next slide"
+      >
+        <svg class="reviews-slider-btn-arrow">
+          <use href="/img/icons/sprite.svg#icon-back-mobile"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
