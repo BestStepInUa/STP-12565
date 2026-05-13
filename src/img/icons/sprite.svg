@@ -17,7 +17,7 @@
   <symbol id="icon-burger" viewBox="0 0 41 32">
     <path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 8h33M4 16h33M4 24h33"></path>
   </symbol>
-<symbol id="icon-star-full-mob-1" viewBox="0 0 37 32">
+<symbol id="star-full" viewBox="0 0 37 32">
 <path fill="currentColor" d="M18.235 0l4.305 11.906h13.931l-11.27 7.358 4.305 11.906-11.27-7.358-11.27 7.358 4.305-11.906-11.27-7.358h13.931l4.305-11.906z"></path>
 </symbol>
 <!-- fill="currentColor" css -->

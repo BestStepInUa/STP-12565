@@ -104,7 +104,7 @@
 
 .review-raiting {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   flex-direction: row;
   gap: 2.53px;
@@ -113,6 +113,9 @@
 .review-star {
   width: 15px;
   height: 15px;
+}
+.review-star-full {
+  color: #7858ee;
 }
 .review-text {
   font-family: var(--quicksand-font-family);
@@ -181,5 +184,112 @@
   }
   .review-author-name {
     font-size: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .reviews-slider-button-prev,
+  .reviews-slider-button-next {
+    display: none;
+  }
+  .reviews-section {
+    padding-top: 34px;
+    padding-bottom: 106px;
+  }
+  .reviews-section .container {
+    padding: 0;
+  }
+  .reviews-title {
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+  }
+  .reviews-swiper {
+    overflow: visible;
+  }
+
+  .reviews-swiper .swiper-wrapper {
+    display: grid !important;
+    grid-template-columns: 444px 444px 444px;
+    grid-template-rows: 309px 309px 309px;
+
+    justify-content: center;
+
+    row-gap: 44px;
+  }
+
+  .reviews-swiper .swiper-slide {
+    width: 444px !important;
+    height: 309px !important;
+  }
+
+  /* ====== позиционирование карточек ====== */
+
+  .reviews-swiper .swiper-slide:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .reviews-swiper .swiper-slide:nth-child(2) {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .reviews-swiper .swiper-slide:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .reviews-swiper .swiper-slide:nth-child(4) {
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  .reviews-swiper .swiper-slide:nth-child(5) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .reviews-swiper .swiper-slide {
+    height: auto;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, #9fd0ff 0%, #6ea8ff 50%, #4f7bff 100%);
+  }
+
+  .review {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex: 1;
+    padding-top: 44px;
+    gap: 4px;
+  }
+  .review-img {
+    width: 100px;
+    height: 100px;
+  }
+  .review-author-name {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+  }
+  .review-raiting {
+    gap: 6px;
+  }
+  .review-star {
+    width: 37px;
+    height: 34px;
+  }
+  .review-top {
+    margin-bottom: 22px;
+    gap: 22px;
+  }
+  .review-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
   }
 }
