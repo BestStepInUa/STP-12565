@@ -53,9 +53,10 @@ main:has(.back-link) {
   text-align: center;
 }
 
-/* BODY LOCK */
-body[data-scroll='locked'] {
+/* MENU LOCK */
+
+html.menu-open,
+html.menu-open body {
   overflow: hidden;
-  touch-action: none;
-  height: 100vh;
+  height: 100%;
 }
