@@ -52,3 +52,9 @@ main {
 main:has(.back-link) {
   text-align: center;
 }
+
+/* BODY LOCK */
+body[data-scroll='locked'] {
+  overflow: hidden;
+}
+
