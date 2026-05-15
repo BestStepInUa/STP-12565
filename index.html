@@ -28,7 +28,7 @@
     <link rel="modulepreload" crossorigin href="/STP-12565/assets/vendor-B6vtsQM9.js">
     <link rel="stylesheet" crossorigin href="/STP-12565/assets/vendor-CP3Yr33f.css">
     <link rel="stylesheet" crossorigin href="/STP-12565/assets/index-BzbaN1cf.css">
-    <link rel="stylesheet" crossorigin href="/STP-12565/assets/styles-CapKRhUS.css">
+    <link rel="stylesheet" crossorigin href="/STP-12565/assets/styles-DAXr485k.css">
   </head>
   <body>
     <header class="header-section">
@@ -94,6 +94,7 @@
         class="burger-button menu-btn-open"
         type="button"
         aria-label="open menu"
+        data-action="open-menu"
       >
         <svg class="burger-icon hero-burger-icon">
           <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#icon-burger"></use>
@@ -378,36 +379,6 @@
         </p>
       </div>
     </div>
-    <picture class="feature-dog-pic">
-      <source
-        media="(max-width: 1439px)"
-        srcset="/STP-12565/assets/fdog-mobile-uOZXK8Mj.png 1x, /STP-12565/assets/fdog-mobile@2x-CBT7Lf5u.png 2x"
-        width="80"
-        height="120"
-      />
-      <img
-        srcset="/STP-12565/assets/fdog-D4rjIOnN.png 1x, /STP-12565/assets/fdog@2x-C0ht303L.png 2x"
-        src="/STP-12565/assets/fdog-D4rjIOnN.png"
-        alt="dog"
-        width="255"
-        height="371"
-      />
-    </picture>
-    <picture class="feature-girl-pic">
-      <source
-        media="(max-width: 1439px)"
-        srcset="/STP-12565/assets/fgirl-mobile-bvcZ2w3X.png 1x, /STP-12565/assets/fgirl-mobile@2x-BXwKo794.png 2x"
-        width="83"
-        height="120"
-      />
-      <img
-        srcset="/STP-12565/assets/fgirl-BPljf0I7.png 1x, /STP-12565/assets/fgirl@2x-bTG_Oc3G.png 2x"
-        src="/STP-12565/assets/fgirl-BPljf0I7.png"
-        alt="girl"
-        width="255"
-        height="371"
-      />
-    </picture>
   </div>
 </section>
 
@@ -668,45 +639,59 @@
 
       <div class="swiper reviews-swiper">
         <div class="swiper-wrapper review-swiper-wrapper">
-          <!-- Slide 1. TileMaster   -->
+          <!-- SLIDE 1 -->
           <div class="swiper-slide">
             <div class="review">
               <div class="review-top">
                 <picture class="review-img">
+                  <!-- MOBILE -->
                   <source
                     media="(max-width: 1439px)"
                     srcset="/STP-12565/assets/m_tile_master-DEbXZ-hM.png 1x, /STP-12565/assets/m_tile_master@2x-vR2tpkMS.png 2x"
                   />
+
+                  <!-- DESKTOP RETINA -->
+                  <source
+                    media="(min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
+                           (min-width: 1440px) and (min-resolution: 192dpi),
+                           (min-width: 1440px) and (min-resolution: 2dppx)"
+                    srcset="/STP-12565/assets/tile_master@2x-BbgiIZYS.png 2x"
+                  />
+
+                  <!-- DESKTOP NORMAL -->
                   <img src="/STP-12565/assets/tile_master-BxEgV82m.png" alt="TileMaster" />
                 </picture>
+
                 <div class="review-author-info">
                   <span class="review-author-name">TileMaster</span>
                   <div class="review-raiting">
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
                     </svg>
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
                     </svg>
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
                     </svg>
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
                     </svg>
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
                     </svg>
                   </div>
                 </div>
               </div>
+
               <p class="review-text">
                 “Love how smooth everything feels! Those big combo chains are so
                 satisfying to pull off.”
               </p>
             </div>
           </div>
-          <!-- Slide 2. Anna P.   -->
+
+          <!-- SLIDE 2 -->
           <div class="swiper-slide">
             <div class="review">
               <div class="review-top">
@@ -715,21 +700,30 @@
                     media="(max-width: 1439px)"
                     srcset="/STP-12565/assets/m_anna_p-DUD40b-R.png 1x, /STP-12565/assets/m_anna_p@2x-B61StQbz.png 2x"
                   />
+
+                  <source
+                    media="(min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
+                           (min-width: 1440px) and (min-resolution: 192dpi),
+                           (min-width: 1440px) and (min-resolution: 2dppx)"
+                    srcset="/STP-12565/assets/anna_p@2x-DfoVV396.png 2x"
+                  />
+
                   <img src="/STP-12565/assets/anna_p-hlwMFgkw.png" alt="Anna P." />
                 </picture>
+
                 <div class="review-author-info">
                   <span class="review-author-name">Anna P.</span>
                   <div class="review-raiting">
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
                     </svg>
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
                     </svg>
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
                     </svg>
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
                     </svg>
                     <svg class="review-star">
@@ -738,10 +732,12 @@
                   </div>
                 </div>
               </div>
+
               <p class="review-text">“Simple but really addictive.”</p>
             </div>
           </div>
-          <!-- Slide 3. Match Fun   -->
+
+          <!-- SLIDE 3 -->
           <div class="swiper-slide">
             <div class="review">
               <div class="review-top">
@@ -750,106 +746,42 @@
                     media="(max-width: 1439px)"
                     srcset="/STP-12565/assets/m_match_fun-B101jc6u.png 1x, /STP-12565/assets/m_match_fun@2x-BQOcontm.png 2x"
                   />
+
+                  <source
+                    media="(min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
+                           (min-width: 1440px) and (min-resolution: 192dpi),
+                           (min-width: 1440px) and (min-resolution: 2dppx)"
+                    srcset="/STP-12565/assets/match_fun@2x-q1xS-JfF.png 2x"
+                  />
+
                   <img src="/STP-12565/assets/match_fun-CTzkX-be.png" alt="Match Fun" />
                 </picture>
+
                 <div class="review-author-info">
                   <span class="review-author-name">Match Fun</span>
                   <div class="review-raiting">
-                    <svg class="review-star review-star-full">
-                      <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <p class="review-text">
-                “Been playing this during my lunch breaks - never gets old!”
-              </p>
-            </div>
-          </div>
-          <!-- Slide 4. BrightMoves   -->
-          <div class="swiper-slide">
-            <div class="review">
-              <div class="review-top">
-                <picture class="review-img">
-                  <source
-                    media="(max-width: 1439px)"
-                    srcset="/STP-12565/assets/m_bright_moves-zMaoFTT0.png 1x, /STP-12565/assets/m_bright_moves@2x-CtV1J1E7.png 2x"
-                  />
-                  <img src="/STP-12565/assets/bright_moves-ccSuz4pP.png" alt="BrightMoves" />
-                </picture>
-                <div class="review-author-info">
-                  <span class="review-author-name">BrightMoves</span>
-                  <div class="review-raiting">
-                    <svg class="review-star review-star-full">
-                      <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <p class="review-text">
-                “This is exactly what I was looking for in a puzzle game -
-                nothing too complicated, just fun.”
-              </p>
-            </div>
-          </div>
-          <!-- Slide 5. RelaxPlay   -->
-          <div class="swiper-slide">
-            <div class="review">
-              <div class="review-top">
-                <picture class="review-img">
-                  <source
-                    media="(max-width: 1439px)"
-                    srcset="/STP-12565/assets/m_relax_play-COIMFmmM.png 1x, /STP-12565/assets/m_relax_play@2x-CMHQF2A6.png 2x"
-                  />
-
-                  <img src="/STP-12565/assets/relax_play-D7QQkE5g.png" alt="RelaxPlay" />
-                </picture>
-                <div class="review-author-info">
-                  <span class="review-author-name">RelaxPlay</span>
-                  <div class="review-raiting">
-                    <svg class="review-star review-star-full">
-                      <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
                     </svg>
                     <svg class="review-star">
-                      <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#icon-star-outline"></use>
+                      <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
+                    </svg>
+                    <svg class="review-star">
+                      <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
+                    </svg>
+                    <svg class="review-star">
+                      <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
+                    </svg>
+                    <svg class="review-star">
+                      <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#star-full"></use>
                     </svg>
                   </div>
                 </div>
               </div>
-              <p class="review-text">“Nice visuals and easy to understand.”</p>
+
+              <p class="review-text">
+                “Been playing this during my lunch breaks - never gets old!”
+              </p>
             </div>
           </div>
         </div>
@@ -979,50 +911,54 @@
 </footer>
 
 
-    <div class="mobile-menu">
-  <button
-    class="close-btn menu-btn-close"
-    type="button"
-    aria-label="close-menu"
-  >
-    <svg class="close-icon" width="24" height="24">
-      <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#icon-back-mobile"></use>
-    </svg>
-  </button>
-
-  <nav class="mob-nav">
-    <ul class="mob-menu-list">
-      <li class="menu-item">
-        <a class="menu-link" href="#about" aria-label="about the game"
-          >About the Game</a
-        >
-      </li>
-      <li class="menu-item">
-        <a class="menu-link" href="#how" aria-label="How to Play"
-          >How to Play</a
-        >
-      </li>
-      <li class="menu-item">
-        <a class="menu-link" href="#features" aria-label="Features">Features</a>
-      </li>
-      <li class="menu-item">
-        <a class="menu-link" href="#why" aria-label="Why Download"
-          >Why Download</a
-        >
-      </li>
-      <li class="menu-item">
-        <a class="menu-link" href="#gallery" aria-label="Gallery">Gallery</a>
-      </li>
-      <li class="menu-item">
-        <a class="menu-link" href="#review" aria-label="Player Reviews"
-          >Player Reviews</a
-        >
-      </li>
-      <li class="menu-item">
-        <a class="menu-link" href="#faq" aria-label="FAQ">FAQ</a>
-      </li>
-    </ul>
-  </nav>
+    <div class="mobile-menu" data-menu="mobile" data-state="closed">
+  <div class="container">
+    <button
+      class="close-btn menu-btn-close"
+      type="button"
+      aria-label="close-menu"
+      data-action="close-menu"
+    >
+      <svg class="close-icon" width="24" height="24">
+        <use href="/STP-12565/assets/sprite-Dk8jYwyN.svg#icon-back-mobile"></use>
+      </svg>
+    </button>
+    <nav class="mob-nav">
+      <ul class="mob-menu-list">
+        <li class="menu-item">
+          <a class="menu-link" href="#about" aria-label="about the game"
+            >About the Game</a
+          >
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#how" aria-label="How to Play"
+            >How to Play</a
+          >
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#features" aria-label="Features"
+            >Features</a
+          >
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#why" aria-label="Why Download"
+            >Why Download</a
+          >
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#gallery" aria-label="Gallery">Gallery</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#reviews" aria-label="Player Reviews"
+            >Player Reviews</a
+          >
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#faq" aria-label="FAQ">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </div>
 
 
