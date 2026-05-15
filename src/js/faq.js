@@ -1,19 +1,8 @@
 document.querySelectorAll('[data-faq-item="faq-item"]').forEach(item => {
   const summary = item.querySelector('[data-faq-summary="faq-summary"]');
-  const icon = item.querySelector(
-    '[data-faq-item-icon-wrapper="faq-item-icon-wrapper"]'
-  );
   const content = item.querySelector('[data-faq-content="faq-content"]');
 
   summary.addEventListener('click', e => {
-    // дозволяємо відкриття тільки по svg
-    if (
-      !e.target.closest('[data-faq-item-icon-wrapper="faq-item-icon-wrapper"]')
-    ) {
-      e.preventDefault();
-      return;
-    }
-
     e.preventDefault();
 
     if (item.open) {
