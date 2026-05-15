@@ -4,6 +4,7 @@
     34.59% 62.78% at 50% 40.11%,
     var(--radial-gradient-from-to)
   );
+  scroll-margin-top: 33px;
 }
 
 .gallery-wrapper {
@@ -125,6 +126,7 @@
       49.84% 40.23% at 50% 53.53%,
       var(--radial-gradient-from-to)
     );
+    scroll-margin-top: 98px;
   }
 
   .gallery-title {

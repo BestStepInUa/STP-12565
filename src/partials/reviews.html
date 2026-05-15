@@ -15,11 +15,12 @@
 
       <div class="swiper reviews-swiper">
         <div class="swiper-wrapper review-swiper-wrapper">
-          <!-- Slide 1. TileMaster   -->
+          <!-- SLIDE 1 -->
           <div class="swiper-slide">
             <div class="review">
               <div class="review-top">
                 <picture class="review-img">
+                  <!-- MOBILE -->
                   <source
                     media="(max-width: 1439px)"
                     srcset="
@@ -27,36 +28,49 @@
                       ./img/reviews/m_tile_master@2x.png 2x
                     "
                   />
+
+                  <!-- DESKTOP RETINA -->
+                  <source
+                    media="(min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
+                           (min-width: 1440px) and (min-resolution: 192dpi),
+                           (min-width: 1440px) and (min-resolution: 2dppx)"
+                    srcset="./img/reviews/tile_master@2x.png 2x"
+                  />
+
+                  <!-- DESKTOP NORMAL -->
                   <img src="./img/reviews/tile_master.png" alt="TileMaster" />
                 </picture>
+
                 <div class="review-author-info">
                   <span class="review-author-name">TileMaster</span>
                   <div class="review-raiting">
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/img/icons/sprite.svg#star-full"></use>
                     </svg>
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/img/icons/sprite.svg#star-full"></use>
                     </svg>
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/img/icons/sprite.svg#star-full"></use>
                     </svg>
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/img/icons/sprite.svg#star-full"></use>
                     </svg>
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/img/icons/sprite.svg#star-full"></use>
                     </svg>
                   </div>
                 </div>
               </div>
+
               <p class="review-text">
                 “Love how smooth everything feels! Those big combo chains are so
                 satisfying to pull off.”
               </p>
             </div>
           </div>
-          <!-- Slide 2. Anna P.   -->
+
+          <!-- SLIDE 2 -->
           <div class="swiper-slide">
             <div class="review">
               <div class="review-top">
@@ -68,21 +82,30 @@
                       ./img/reviews/m_anna_p@2x.png 2x
                     "
                   />
+
+                  <source
+                    media="(min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
+                           (min-width: 1440px) and (min-resolution: 192dpi),
+                           (min-width: 1440px) and (min-resolution: 2dppx)"
+                    srcset="./img/reviews/anna_p@2x.png 2x"
+                  />
+
                   <img src="./img/reviews/anna_p.png" alt="Anna P." />
                 </picture>
+
                 <div class="review-author-info">
                   <span class="review-author-name">Anna P.</span>
                   <div class="review-raiting">
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/img/icons/sprite.svg#star-full"></use>
                     </svg>
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/img/icons/sprite.svg#star-full"></use>
                     </svg>
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/img/icons/sprite.svg#star-full"></use>
                     </svg>
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/img/icons/sprite.svg#star-full"></use>
                     </svg>
                     <svg class="review-star">
@@ -91,10 +114,12 @@
                   </div>
                 </div>
               </div>
+
               <p class="review-text">“Simple but really addictive.”</p>
             </div>
           </div>
-          <!-- Slide 3. Match Fun   -->
+
+          <!-- SLIDE 3 -->
           <div class="swiper-slide">
             <div class="review">
               <div class="review-top">
@@ -106,112 +131,42 @@
                       ./img/reviews/m_match_fun@2x.png 2x
                     "
                   />
+
+                  <source
+                    media="(min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
+                           (min-width: 1440px) and (min-resolution: 192dpi),
+                           (min-width: 1440px) and (min-resolution: 2dppx)"
+                    srcset="./img/reviews/match_fun@2x.png 2x"
+                  />
+
                   <img src="./img/reviews/match_fun.png" alt="Match Fun" />
                 </picture>
+
                 <div class="review-author-info">
                   <span class="review-author-name">Match Fun</span>
                   <div class="review-raiting">
-                    <svg class="review-star review-star-full">
-                      <use href="/img/icons/sprite.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/img/icons/sprite.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/img/icons/sprite.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/img/icons/sprite.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/img/icons/sprite.svg#star-full"></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <p class="review-text">
-                “Been playing this during my lunch breaks - never gets old!”
-              </p>
-            </div>
-          </div>
-          <!-- Slide 4. BrightMoves   -->
-          <div class="swiper-slide">
-            <div class="review">
-              <div class="review-top">
-                <picture class="review-img">
-                  <source
-                    media="(max-width: 1439px)"
-                    srcset="
-                      ./img/reviews/m_bright_moves.png    1x,
-                      ./img/reviews/m_bright_moves@2x.png 2x
-                    "
-                  />
-                  <img src="./img/reviews/bright_moves.png" alt="BrightMoves" />
-                </picture>
-                <div class="review-author-info">
-                  <span class="review-author-name">BrightMoves</span>
-                  <div class="review-raiting">
-                    <svg class="review-star review-star-full">
-                      <use href="/img/icons/sprite.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/img/icons/sprite.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/img/icons/sprite.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/img/icons/sprite.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/img/icons/sprite.svg#star-full"></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <p class="review-text">
-                “This is exactly what I was looking for in a puzzle game -
-                nothing too complicated, just fun.”
-              </p>
-            </div>
-          </div>
-          <!-- Slide 5. RelaxPlay   -->
-          <div class="swiper-slide">
-            <div class="review">
-              <div class="review-top">
-                <picture class="review-img">
-                  <source
-                    media="(max-width: 1439px)"
-                    srcset="
-                      ./img/reviews/m_relax_play.png    1x,
-                      ./img/reviews/m_relax_play@2x.png 2x
-                    "
-                  />
-
-                  <img src="./img/reviews/relax_play.png" alt="RelaxPlay" />
-                </picture>
-                <div class="review-author-info">
-                  <span class="review-author-name">RelaxPlay</span>
-                  <div class="review-raiting">
-                    <svg class="review-star review-star-full">
-                      <use href="/img/icons/sprite.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/img/icons/sprite.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
-                      <use href="/img/icons/sprite.svg#star-full"></use>
-                    </svg>
-                    <svg class="review-star review-star-full">
+                    <svg class="review-star">
                       <use href="/img/icons/sprite.svg#star-full"></use>
                     </svg>
                     <svg class="review-star">
-                      <use href="/img/icons/sprite.svg#icon-star-outline"></use>
+                      <use href="/img/icons/sprite.svg#star-full"></use>
+                    </svg>
+                    <svg class="review-star">
+                      <use href="/img/icons/sprite.svg#star-full"></use>
+                    </svg>
+                    <svg class="review-star">
+                      <use href="/img/icons/sprite.svg#star-full"></use>
+                    </svg>
+                    <svg class="review-star">
+                      <use href="/img/icons/sprite.svg#star-full"></use>
                     </svg>
                   </div>
                 </div>
               </div>
-              <p class="review-text">“Nice visuals and easy to understand.”</p>
+
+              <p class="review-text">
+                “Been playing this during my lunch breaks - never gets old!”
+              </p>
             </div>
           </div>
         </div>

@@ -1,23 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const openMenuBtn = document.querySelector('.menu-btn-open');
-  const closeMenuBtn = document.querySelector('.menu-btn-close');
-  const mobileMenu = document.querySelector('.mobile-menu');
+  const openBtn = document.querySelector('[data-action="open-menu"]');
+  const closeBtn = document.querySelector('[data-action="close-menu"]');
+  const menu = document.querySelector('[data-menu="mobile"]');
 
-  // Функция для переключения меню
-  const toggleMenu = () => {
-    mobileMenu.classList.toggle('is-open');
+  if (!openBtn || !closeBtn || !menu) return;
 
-    // Блокируем скролл body, чтобы страница не крутилась под меню
-    document.body.classList.toggle('no-scroll');
+  const openMenu = () => {
+    menu.dataset.state = 'open';
+    document.body.classList.add('no-scroll');
   };
 
-  openMenuBtn.addEventListener('click', toggleMenu);
-  closeMenuBtn.addEventListener('click', toggleMenu);
+  const closeMenu = () => {
+    menu.dataset.state = 'closed';
+    document.body.classList.remove('no-scroll');
+  };
 
-  // Закрытие меню при клике на ссылку (важно для одностраничников)
-  mobileMenu.addEventListener('click', event => {
-    if (event.target.classList.contains('menu-link')) {
-      toggleMenu();
+  openBtn.addEventListener('click', openMenu);
+  closeBtn.addEventListener('click', closeMenu);
+
+  menu.addEventListener('click', e => {
+    if (e.target.classList.contains('menu-link')) {
+      closeMenu();
     }
   });
+
+  menu.dataset.state = 'closed';
 });
