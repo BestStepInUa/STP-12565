@@ -10,7 +10,7 @@ let reviewsSwiper = null;
 function initSwiper() {
   if (window.innerWidth >= 1440) return;
 
-  reviewsSwiper = new Swiper('.reviews-swiper', {
+  reviewsSwiper = new Swiper('#reviews-swiper', {
     modules: [EffectCoverflow, Navigation, Keyboard],
 
     loop: true,
@@ -38,8 +38,8 @@ function initSwiper() {
     },
 
     navigation: {
-      nextEl: '.reviews-slider-button-next',
-      prevEl: '.reviews-slider-button-prev',
+      nextEl: '[data-nav="reviews-slider-button-next"]',
+      prevEl: '[data-nav="reviews-slider-button-prev"]',
     },
 
     keyboard: {
