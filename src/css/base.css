@@ -24,9 +24,13 @@
 }
 
 html {
+  scroll-behavior: smooth;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 body {
+  box-sizing: border-box;
+
   background: radial-gradient(
     34.59% 62.78% at 50% 40.11%,
     #7858ee 0%,
@@ -43,7 +47,6 @@ body {
   min-height: 100dvh;
   margin: 0;
   overflow-x: hidden;
-  min-width: 0;
 }
 
 main {
