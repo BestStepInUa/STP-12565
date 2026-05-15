@@ -52,7 +52,7 @@
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  cursor: default;
+  cursor: pointer;
   user-select: none;
   height: 20px;
 }
