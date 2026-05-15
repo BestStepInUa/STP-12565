@@ -5,7 +5,9 @@ document.querySelectorAll('[data-faq-item="faq-item"]').forEach(item => {
   summary.addEventListener('click', e => {
     e.preventDefault();
 
-    if (item.open) {
+    const isOpen = item.hasAttribute('open');
+
+    if (isOpen) {
       // CLOSE
       content.style.height = content.scrollHeight + 'px';
 
@@ -16,13 +18,13 @@ document.querySelectorAll('[data-faq-item="faq-item"]').forEach(item => {
       content.addEventListener(
         'transitionend',
         () => {
-          item.open = false;
+          item.removeAttribute('open');
         },
         { once: true }
       );
     } else {
       // OPEN
-      item.open = true;
+      item.setAttribute('open', '');
 
       content.style.height = '0px';
 
