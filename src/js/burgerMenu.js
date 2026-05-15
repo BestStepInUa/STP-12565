@@ -6,27 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!openBtn || !closeBtn || !menu) return;
 
   const openMenu = () => {
-    const scrollY = window.scrollY;
-
-    document.body.dataset.scroll = 'locked';
-    document.body.style.top = `-${scrollY}px`;
-    document.body.style.position = 'fixed';
-    document.body.style.width = '100%';
-
     menu.dataset.state = 'open';
+    document.documentElement.classList.add('menu-open');
   };
 
   const closeMenu = () => {
-    const scrollY = document.body.style.top;
-
-    document.body.removeAttribute('data-scroll');
-    document.body.style.position = '';
-    document.body.style.top = '';
-    document.body.style.width = '';
-
-    window.scrollTo(0, parseInt(scrollY || '0') * -1);
-
     menu.dataset.state = 'closed';
+    document.documentElement.classList.remove('menu-open');
   };
 
   openBtn.addEventListener('click', openMenu);
