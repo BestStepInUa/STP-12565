@@ -56,5 +56,6 @@ main:has(.back-link) {
 /* BODY LOCK */
 body[data-scroll='locked'] {
   overflow: hidden;
+  touch-action: none;
+  height: 100vh;
 }
-
