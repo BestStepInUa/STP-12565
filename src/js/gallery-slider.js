@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 
-new Swiper('.gallery-swiper', {
+new Swiper('#gallery-swiper', {
   modules: [EffectCoverflow, Navigation, Keyboard],
 
   loop: true,
@@ -46,8 +46,8 @@ new Swiper('.gallery-swiper', {
   },
 
   navigation: {
-    nextEl: '.gallery-slider-button-next',
-    prevEl: '.gallery-slider-button-prev',
+    nextEl: '[data-nav="gallery-slider-button-next"]',
+    prevEl: '[data-nav="gallery-slider-button-prev"]',
   },
 
   keyboard: {
