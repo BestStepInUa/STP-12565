@@ -7,22 +7,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const openMenu = () => {
     menu.dataset.state = 'open';
-    document.body.classList.add('no-scroll');
+    document.body.dataset.scroll = 'locked';
   };
 
   const closeMenu = () => {
     menu.dataset.state = 'closed';
-    document.body.classList.remove('no-scroll');
+    document.body.removeAttribute('data-scroll');
   };
 
   openBtn.addEventListener('click', openMenu);
   closeBtn.addEventListener('click', closeMenu);
 
-  menu.addEventListener('click', e => {
-    if (e.target.classList.contains('menu-link')) {
-      closeMenu();
-    }
-  });
+menu.addEventListener('click', e => {
+  if (e.target.closest('[data-menu-link]')) {
+    closeMenu();
+  }
+});
 
   menu.dataset.state = 'closed';
 });
