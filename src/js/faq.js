@@ -1,4 +1,4 @@
-document.querySelectorAll('[data-faq-item="data-faq-item"]').forEach(item => {
+document.querySelectorAll('[data-faq-item="faq-item"]').forEach(item => {
   const summary = item.querySelector('[data-faq-summary="faq-summary"]');
   const icon = item.querySelector(
     '[data-faq-item-icon-wrapper="faq-item-icon-wrapper"]'
